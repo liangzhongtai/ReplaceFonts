@@ -3,8 +3,8 @@
 ## ReplaceFonts
 ---------------
 
-> 关于我，欢迎关注  
-  博客：[简书](http://www.jianshu.com/users/8d01db870d4a/timeline) 微信：[ben_said](279113482)  
+> 关于我，欢迎关注
+  博客：[简书](http://www.jianshu.com/users/8d01db870d4a/timeline) 微信：[ben_said](279113482)
  (如果你想打造个人品牌，把自己的介绍放在这里也是可以的)
 
 （项目背景/作用介绍）
@@ -38,19 +38,43 @@ dependencies {
 ### 使用方法
 
 ## 1.全局字体设置
-(1).将需要的字体ttf文件放置到assets目录下的,如/fonts/xxx.ttf
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step1.png)
-		(2).在Application使用的Theme中添加标签<item name="android:typeface">monospace</item>
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step2.png)
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step3.png)
-		(3).在Application中初始化字体文件,这里需要使用到第三方的工具类FontUtil
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step4.png)
-		(4).如果使用到了ToolBar,用FontSystemToolBar替换，同时要通过paddingLeft来控制标题的左偏移量
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step6.png)
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step8.png)
-		(5).如果使用到了自定义View,继承FontSystemview或通过以下方式修改自定义View的字体
-		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step5.png)
-		(6).通过以上方式,基本完成了整个app字体的统一替换.		
+
+(1).将需要的字体ttf文件放置到assets目录下的,如/fonts/xxx.ttf.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step1.png)
+
+(2).在Application使用的Theme中添加标签<item name="android:typeface">monospace</item>.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step2.png)
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step3.png)
+
+(3).在Application中初始化字体文件,这里需要使用到第三方的工具类FontUtil.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step4.png)
+
+(4).如果使用到了ToolBar,用FontSystemToolBar替换，同时要通过paddingLeft来控制标题的左偏移量.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step6.png)
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step8.png)
+
+(5).如果使用到了自定义View,继承FontSystemview或通过以下方式修改自定义View的字体.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step5.png)
+
+(6).通过以上方式,基本完成了整个app字体的统一替换.
+
+## 2.自定义字体View
+(1).创建View的子类,通过paint.setTypeface(typeface)方法改变字体,注意同一种字体只需读取一次，因为字体读取比较耗费时间并且会占用大量内存.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/free_step1.png)
+
+(2).创建TextView的子类,通过TextView的setTypeface(typeface)方法来改变字体,注意事项同上.
+
+![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/free_step2.png)
+
+
 
 ### 注意事项
 
