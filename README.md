@@ -44,19 +44,19 @@ dependencies {
 		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step2.png)
 		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step3.png)
 		(3).在Application中初始化字体文件,这里需要使用到第三方的工具类FontUtil
-        ![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step4.png)
+		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step4.png)
 		(4).如果使用到了ToolBar,用FontSystemToolBar替换，同时要通过paddingLeft来控制标题的左偏移量
 		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step6.png)
-	    ![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step8.png)
+		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step8.png)
 		(5).如果使用到了自定义View,继承FontSystemview或通过以下方式修改自定义View的字体
-	    ![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step5.png)
-		(6).通过以上方式,基本完成了整个app字体的统一替换.
+		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step5.png)
+		(6).通过以上方式,基本完成了整个app字体的统一替换.		
 
 ### 注意事项
 
 -注意,如果项目需要简繁体切换功能,切记不要在控件中直接使用繁体字源数据,否则无论是全局替换的方式还是自定义字体View控件,
 	 都会导致简繁体不一致.
-![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step7.png)
+		![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step7.png)
 
 
 ## License
