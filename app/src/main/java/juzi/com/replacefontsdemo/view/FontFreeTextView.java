@@ -39,6 +39,4 @@ public class FontFreeTextView extends TextView {
         invalidate();
     }
 
-
-
 }

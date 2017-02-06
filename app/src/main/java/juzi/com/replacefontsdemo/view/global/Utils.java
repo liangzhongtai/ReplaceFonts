@@ -6,6 +6,8 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 
 /**
  * Created by liangzhongtai on 2017/1/12.
@@ -25,5 +27,11 @@ public class Utils {
             ActivityManager am = (ActivityManager) activity.getSystemService(activity.ACTIVITY_SERVICE);
             am.restartPackage(activity.getPackageName());
         }
+    }
+
+
+    public static Typeface getTypeface(String fontAssetPath){
+        AssetManager assetManager= Global.mContext.getAssets();
+        return  Typeface.createFromAsset(assetManager,fontAssetPath);
     }
 }

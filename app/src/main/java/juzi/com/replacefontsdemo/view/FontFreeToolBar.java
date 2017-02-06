@@ -23,9 +23,7 @@ public class FontFreeToolBar extends Toolbar {
     }
     public FontFreeToolBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
     }
-
     public void setFontPath(String fontAssetPath){
         if(typeface==null||this.fontAssetPath==null||!this.fontAssetPath.equals(fontAssetPath)) {
             typeface = Utils.getTypeface(fontAssetPath);

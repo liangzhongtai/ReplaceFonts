@@ -12,6 +12,7 @@ import android.widget.TextView;
 import juzi.com.replacefontsdemo.view.global.Configs;
 import juzi.com.replacefontsdemo.view.global.Global;
 import juzi.com.replacefontsdemo.view.global.SPUtil;
+import juzi.com.replacefontsdemo.view.global.Utils;
 
 
 /**
@@ -20,6 +21,7 @@ import juzi.com.replacefontsdemo.view.global.SPUtil;
 public class FontFreeView extends View {
     private Paint paint;
     private static Typeface typeface;
+    protected static String fontAssetPath;
     public FontFreeView(Context context) {
         this(context, null);
     }
@@ -33,10 +35,14 @@ public class FontFreeView extends View {
         paint.setTextSize(Global.sp2px(16));
         paint.setTextAlign(Paint.Align.CENTER);
         paint.setTypeface(Typeface.MONOSPACE);
+
     }
 
     public void setFontPath(String fontAssetPath){
-        typeface = getTypeface(fontAssetPath);
+        if(typeface==null||this.fontAssetPath==null||!this.fontAssetPath.equals(fontAssetPath)) {
+            typeface = Utils.getTypeface(fontAssetPath);
+            this.fontAssetPath = fontAssetPath;
+        }
         paint.setTypeface(typeface);
         invalidate();
     }
@@ -48,8 +54,5 @@ public class FontFreeView extends View {
         canvas.drawText("使用canvas绘制简体中文", getWidth()/2, getHeight() / 2, paint);
     }
 
-    public Typeface getTypeface(String fontAssetPath){
-        AssetManager assetManager= Global.mContext.getAssets();
-        return  Typeface.createFromAsset(assetManager,fontAssetPath);
-    }
+
 }

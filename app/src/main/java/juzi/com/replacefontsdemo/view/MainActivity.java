@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         mFontFreeFV.setFontPath(freePath);
         mFontFangFV.setFontPath(freePath);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("字体替换");
         setSupportActionBar(toolbar);
     }
 

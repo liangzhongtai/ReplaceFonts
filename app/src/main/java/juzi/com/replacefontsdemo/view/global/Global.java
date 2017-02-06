@@ -13,8 +13,7 @@ public class Global {
         mContext = context;
         DisplayMetrics dm = mContext.getResources().getDisplayMetrics();
         mScaledDensity = dm.scaledDensity;
-        FontUtil.getInstance().replaceSystemDefaultFontFromAsset(Global.mContext,
-                SPUtil.getString(SPUtil.FONT_PATH_SYSTEM,Configs.FONTS_XHJ));
+
     }
 
     public static int sp2px(int sp){

@@ -16,20 +16,16 @@ import juzi.com.replacefontsdemo.view.global.Global;
 public class FontSystemFangView extends View {
     private Paint paint;
     public FontSystemFangView(Context context) {
-        this(context, null);
-    }
+        this(context, null);}
     public FontSystemFangView(Context context, AttributeSet attrs) {
-        this(context, attrs, -1);
-    }
+        this(context, attrs, -1);}
     public FontSystemFangView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         paint = new Paint();
         paint.setAntiAlias(true);
         paint.setTextSize(Global.sp2px(16));
         paint.setTextAlign(Paint.Align.CENTER);
-        paint.setTypeface(Typeface.MONOSPACE);
-    }
-
+        paint.setTypeface(Typeface.MONOSPACE);}
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
