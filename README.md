@@ -46,9 +46,11 @@ dependencies {
 
 (1).将需要的字体ttf文件放置到assets目录下的,如/fonts/xxx.ttf.
 
+
 ![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step1.png)
 
 (2).在Application使用的Theme中添加标签<item name="android:typeface">monospace</item>.
+
 
 ![image](https://github.com/liangzhongtai/ReplaceFonts/blob/master/resultPic/system_step2.png)
 
