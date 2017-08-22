@@ -30,6 +30,6 @@ public class FontSystemView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawText("使用canvas绘制简体中文",getWidth()/2,getHeight()/2,paint);
+        //canvas.drawText("使用canvas绘制简体中文",getWidth()/2,getHeight()/2,paint);
     }
 }
