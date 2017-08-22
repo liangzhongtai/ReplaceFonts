@@ -24,8 +24,8 @@ public class FontSystemView extends View {
         super(context, attrs, defStyleAttr);
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setTextSize(Global.sp2px(16));
-        paint.setTextAlign(Paint.Align.CENTER);
+        //paint.setTextSize(Global.sp2px(16));
+        //paint.setTextAlign(Paint.Align.CENTER);
         paint.setTypeface(Typeface.MONOSPACE);}
     @Override
     protected void onDraw(Canvas canvas) {
