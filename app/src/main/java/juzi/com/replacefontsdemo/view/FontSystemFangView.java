@@ -23,12 +23,12 @@ public class FontSystemFangView extends View {
         super(context, attrs, defStyleAttr);
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setTextSize(Global.sp2px(16));
-        paint.setTextAlign(Paint.Align.CENTER);
+        //paint.setTextSize(Global.sp2px(16));
+        //paint.setTextAlign(Paint.Align.CENTER);
         paint.setTypeface(Typeface.MONOSPACE);}
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawText("使用canvas繪製繁體中文",getWidth()/2,getHeight()/2,paint);
+        //canvas.drawText("使用canvas繪製繁體中文",getWidth()/2,getHeight()/2,paint);
     }
 }
