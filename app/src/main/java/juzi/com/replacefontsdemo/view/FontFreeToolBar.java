@@ -14,7 +14,7 @@ import juzi.com.replacefontsdemo.view.global.Utils;
  */
 public class FontFreeToolBar extends Toolbar {
     private static Typeface typeface;
-    protected static String fontAssetPath;
+    public static String fontAssetPath = Configs.FONTS_XHJ;
     public FontFreeToolBar(Context context) {
         this(context, null);
     }
