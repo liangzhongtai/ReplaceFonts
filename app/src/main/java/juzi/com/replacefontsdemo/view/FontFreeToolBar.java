@@ -1,4 +1,5 @@
-package juzi.com.replacefontsdemo.view;
+
+set、package juzi.com.replacefontsdemo.view;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -23,6 +24,7 @@ public class FontFreeToolBar extends Toolbar {
     }
     public FontFreeToolBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        setFontPath(fontAssetPath);
     }
     public void setFontPath(String fontAssetPath){
         if(typeface==null||this.fontAssetPath==null||!this.fontAssetPath.equals(fontAssetPath)) {
