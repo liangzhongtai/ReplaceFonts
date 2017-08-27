@@ -14,7 +14,7 @@ import juzi.com.replacefontsdemo.view.global.Global;
  * Created by liangzhongtai on 2017/1/12.
  */
 public class FontSystemFangView extends View {
-    private Paint paint;
+    Paint paint;
     public FontSystemFangView(Context context) {
         this(context, null);}
     public FontSystemFangView(Context context, AttributeSet attrs) {
