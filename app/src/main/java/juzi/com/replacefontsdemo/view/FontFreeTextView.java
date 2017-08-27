@@ -18,7 +18,7 @@ import juzi.com.replacefontsdemo.view.global.Utils;
  */
 public class FontFreeTextView extends TextView {
     protected static Typeface typeface;
-    protected static String fontAssetPath;
+    public static String fontAssetPath = Configs.FONTS_XHJ;
     public FontFreeTextView(Context context) {
         this(context, null);
     }
