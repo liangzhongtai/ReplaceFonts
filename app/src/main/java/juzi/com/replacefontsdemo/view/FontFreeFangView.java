@@ -16,7 +16,7 @@ import juzi.com.replacefontsdemo.view.global.Utils;
  * Created by liangzhongtai on 2017/1/12.
  */
 public class FontFreeFangView extends View {
-    private Paint paint;
+    Paint paint;
     private static Typeface typeface;
     protected static String fontAssetPath;
     public FontFreeFangView(Context context) {
@@ -33,7 +33,6 @@ public class FontFreeFangView extends View {
         //paint.setTextAlign(Paint.Align.CENTER);
         paint.setTypeface(Typeface.MONOSPACE);
     }
-
     public void setFontPath(String fontAssetPath){
         if(typeface==null||this.fontAssetPath==null||!this.fontAssetPath.equals(fontAssetPath)) {
             typeface =  Utils.getTypeface(fontAssetPath);
