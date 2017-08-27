@@ -1,4 +1,4 @@
-package juzi.com.replacefontsdemo.view;
+    package juzi.com.replacefontsdemo.view;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -27,7 +27,7 @@ public class FontFreeTextView extends TextView {
     }
     public FontFreeTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
+        setFontPath(fontAssetPath);
     }
 
     public void setFontPath(String fontAssetPath){
