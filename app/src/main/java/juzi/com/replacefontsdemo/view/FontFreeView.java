@@ -19,7 +19,7 @@ import juzi.com.replacefontsdemo.view.global.Utils;
  * Created by liangzhongtai on 2017/1/12.
  */
 public class FontFreeView extends View {
-    private Paint paint;
+    Paint paint;
     private static Typeface typeface;
     protected static String fontAssetPath;
     public FontFreeView(Context context) {
