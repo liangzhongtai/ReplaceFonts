@@ -26,7 +26,7 @@ public class FontSystemToolBar extends Toolbar {
         int length = getChildCount();
         for(int i=0;i<length;i++){
             View view = getChildAt(i);
-            if(view.getClass() == TextView.class){
+            if(view instanceof TextView){
                 ((TextView)view).setTypeface(Typeface.MONOSPACE);
             }
         }
