@@ -36,7 +36,7 @@ allprojects {
 App_Gradle:
 ``` xml
 dependencies {
-	        compile 'com.github.liangzhongtai:ReplaceFonts:-SNAPSHOT'
+	        compile 'com.github.liangzhongtai:ReplaceFonts:v1.1'
 	}
 ```
 
