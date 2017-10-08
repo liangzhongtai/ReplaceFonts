@@ -1,4 +1,4 @@
-package juzi.com.replacefontsdemo.view.global;
+package com.lzt.replacefonts.view.global;
 
 import android.app.Application;
 import android.content.Context;

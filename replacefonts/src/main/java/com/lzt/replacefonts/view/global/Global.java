@@ -1,4 +1,4 @@
-package juzi.com.replacefontsdemo.view.global;
+package com.lzt.replacefonts.view.global;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
@@ -10,6 +10,7 @@ public class Global {
     public static Context mContext;
     public static float mScaledDensity;
     public static void init(Context context){
+        if(mContext!=null)return;
         mContext = context;
         DisplayMetrics dm = mContext.getResources().getDisplayMetrics();
         mScaledDensity = dm.scaledDensity;

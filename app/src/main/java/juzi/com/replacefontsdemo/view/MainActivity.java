@@ -1,8 +1,6 @@
 package juzi.com.replacefontsdemo.view;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -11,10 +9,13 @@ import android.view.MenuItem;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.lzt.replacefonts.view.FontFreeFangView;
+import com.lzt.replacefonts.view.FontFreeView;
+import com.lzt.replacefonts.view.global.Utils;
+
 import juzi.com.replacefontsdemo.R;
 import juzi.com.replacefontsdemo.view.global.Configs;
 import juzi.com.replacefontsdemo.view.global.SPUtil;
-import juzi.com.replacefontsdemo.view.global.Utils;
 
 public class MainActivity extends AppCompatActivity {
     private RadioGroup mFontSystemRG;

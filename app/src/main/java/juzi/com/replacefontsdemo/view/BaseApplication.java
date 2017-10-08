@@ -2,9 +2,10 @@ package juzi.com.replacefontsdemo.view;
 
 import android.app.Application;
 
+import com.lzt.replacefonts.view.global.FontUtil;
+import com.lzt.replacefonts.view.global.Global;
+
 import juzi.com.replacefontsdemo.view.global.Configs;
-import juzi.com.replacefontsdemo.view.global.FontUtil;
-import juzi.com.replacefontsdemo.view.global.Global;
 import juzi.com.replacefontsdemo.view.global.SPUtil;
 
 /**

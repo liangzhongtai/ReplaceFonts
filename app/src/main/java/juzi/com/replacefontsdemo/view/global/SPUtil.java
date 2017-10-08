@@ -3,6 +3,8 @@ package juzi.com.replacefontsdemo.view.global;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.lzt.replacefonts.view.global.Global;
+
 /**
  * Created by liangzhongtai on 2017/1/12.
  */

@@ -1,15 +1,12 @@
-package juzi.com.replacefontsdemo.view;
+package com.lzt.replacefonts.view;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.graphics.Typeface;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import java.io.File;
-import java.lang.reflect.Field;
 
 /**
  * Created by liangzhongtai on 2017/1/13.
@@ -26,7 +23,7 @@ public class FontSystemToolBar extends Toolbar {
         int length = getChildCount();
         for(int i=0;i<length;i++){
             View view = getChildAt(i);
-            if(view instanceof TextView){
+            if(view instanceof TextView){
                 ((TextView)view).setTypeface(Typeface.MONOSPACE);
             }
         }

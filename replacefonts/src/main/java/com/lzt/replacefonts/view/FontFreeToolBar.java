@@ -1,14 +1,16 @@
+package com.lzt.replacefonts.view;
 
-set、package juzi.com.replacefontsdemo.view;
+import android.graphics.Typeface;
+
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import juzi.com.replacefontsdemo.view.global.Utils;
+import com.lzt.replacefonts.view.global.Utils;
+
 
 /**
  * Created by liangzhongtai on 2017/1/13.

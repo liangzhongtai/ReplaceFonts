@@ -69,7 +69,7 @@
             />
     </RadioGroup>
 
-    <juzi.com.replacefontsdemo.view.FontSystemView
+    <com.lzt.replacefonts.view.FontSystemView
         android:id="@+id/fsv_test"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
@@ -79,7 +79,7 @@
         />
 
 
-    <juzi.com.replacefontsdemo.view.FontSystemFangView
+    <com.lzt.replacefonts.view.FontSystemFangView
         android:id="@+id/fsfv_test"
         android:layout_width="match_parent"
         android:layout_height="32dp"
@@ -160,7 +160,7 @@
             />
     </RadioGroup>
 
-    <juzi.com.replacefontsdemo.view.FontFreeView
+    <com.lzt.replacefonts.view.FontFreeView
         android:id="@+id/ffv_test"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
@@ -168,7 +168,7 @@
         android:textColor="@color/colorPrimary"
         android:layout_below="@+id/rg_font_test"
         />
-    <juzi.com.replacefontsdemo.view.FontFreeFangView
+    <com.lzt.replacefonts.view.FontFreeFangView
         android:id="@+id/fffv_test"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
